@@ -1,0 +1,57 @@
+[
+	{ 
+		"keys": ["ctrl+alt+q"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	},
+	{ 
+		"keys": ["ctrl+alt+a"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "run", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	},
+	{ 
+		"keys": ["ctrl+alt+s"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "icrun", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	},
+	{ 
+		"keys": ["ctrl+alt+z"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ifrun", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	},
+	{ 
+		"keys": ["ctrl+alt+x"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "iofrun", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	}
+]
