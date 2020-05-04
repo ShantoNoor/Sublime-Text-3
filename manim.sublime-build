@@ -1,40 +1,40 @@
 {
-	"shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -Latest & python I:\\manim-master\\manim.py \"${file}\" --leave_progress_bar & echo. & pause\"",
+	"shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -Latest & python D:\\manim-master\\manim.py \"${file}\" --leave_progress_bar & echo. & pause\"",
     "selector": "source.python",
     "file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
     "variants": 
 	[
 		{ 
 		 "name": "ps - Feb19", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -ps -feb19 & python I:\\manim-Feb_3_2019\\manim.py \"${file}\" -ps --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -ps -feb19 & python D:\\manim-Feb_3_2019\\manim.py \"${file}\" -ps --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "pl - Feb19", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pl -feb19 & python I:\\manim-Feb_3_2019\\manim.py \"${file}\" -pl --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pl -feb19 & python D:\\manim-Feb_3_2019\\manim.py \"${file}\" -pl --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "pm - Feb19", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pm -feb19 & python I:\\manim-Feb_3_2019\\manim.py \"${file}\" -pm --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pm -feb19 & python D:\\manim-Feb_3_2019\\manim.py \"${file}\" -pm --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "p - Feb19", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -p -feb19 & python I:\\manim-Feb_3_2019\\manim.py \"${file}\" -p --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -p -feb19 & python D:\\manim-Feb_3_2019\\manim.py \"${file}\" -p --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "ps - Latest", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -ps -Latest & python I:\\manim-master\\manim.py \"${file}\" -ps --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -ps -Latest & python D:\\manim-master\\manim.py \"${file}\" -ps --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "pl - Latest", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pl -Latest & python I:\\manim-master\\manim.py \"${file}\" -pl --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pl -Latest & python D:\\manim-master\\manim.py \"${file}\" -pl --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "pm - Latest", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pm -Latest & python I:\\manim-master\\manim.py \"${file}\" -pm --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -pm -Latest & python D:\\manim-master\\manim.py \"${file}\" -pm --leave_progress_bar & echo. & pause\""
 		},
 		{ 
 		 "name": "p - Latest", 
-		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -p -Latest & python I:\\manim-master\\manim.py \"${file}\" -p --leave_progress_bar & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title manim.py ${file_base_name}.py -p -Latest & python D:\\manim-master\\manim.py \"${file}\" -p --leave_progress_bar & echo. & pause\""
 		}
 	]
 }
