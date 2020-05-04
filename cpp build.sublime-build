@@ -1,4 +1,4 @@
-//Cpp build script---
+//Cpp build new script---
 //Shanto Noor
 //Location Windows 10: C:\Users\Shanto\AppData\Roaming\Sublime Text 3\Packages\User
 {
@@ -16,12 +16,16 @@
 	 	],
 	"shell":true,
 	"working_dir":"$file_path",
-	"selector":"source.c, source.cpp",
+	"selector":"source.c, source.cpp, source.cxx",
 
 	"variants": [
 		{ 
 		 "name": "run", 
-		 "shell_cmd": "g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && start cmd /c \"title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		},
+		{ 
+		 "name": "icrun", 
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -ifrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" < input.txt & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
 		},
 		{ 
 		 "name": "ifrun", 
@@ -58,12 +62,8 @@
                 "&&",
 				"${file_path}\\exe/${file_base_name}.exe",
 				"<",
-				"input.txt>output.txt"
+				"input.txt > output.txt"
 		 	]
-		},
-		{ 
-		 "name": "icfrun", 
-		 "shell_cmd": "g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && start cmd /c \"title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" < input.txt & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
 		}
 	]
 }
