@@ -21,15 +21,15 @@
 	"variants": [
 		{
 		 "name": "nrun", 
-		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -nrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe && color 09 && \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
 		},
 		{
 		 "name": "run", 
-		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause & del \"${file_base_name}.exe\"\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe && color 0e && \"${file_base_name}.exe\" && del \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
 		},
 		{ 
 		 "name": "icrun", 
-		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -ifrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" < input.txt & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause & del \"${file_base_name}.exe\"\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe && color 0b && \"${file_base_name}.exe\" < input.txt && del \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
 		},
 		{ 
 		 "name": "ifrun", 
