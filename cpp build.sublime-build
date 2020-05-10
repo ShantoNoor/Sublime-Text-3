@@ -3,29 +3,33 @@
 //Location Windows 10: C:\Users\Shanto\AppData\Roaming\Sublime Text 3\Packages\User
 {
 	"cmd": 
-	 	[
+	   [
 	 		"g++", 
 			"-std=c++17",
             "-Wshadow",
             "-Wall",
             "${file}",
             "-o",
-            "exe/${file_base_name}.exe",
+            "${file_base_name}.exe",
             "-O2",
             "-Wno-unused-result"
-	 	],
+	   ],
 	"shell":true,
 	"working_dir":"$file_path",
 	"selector":"source.c, source.cpp, source.cxx",
 
 	"variants": [
-		{ 
+		{
+		 "name": "nrun", 
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -nrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		},
+		{
 		 "name": "run", 
-		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -run & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause & del \"${file_base_name}.exe\"\""
 		},
 		{ 
 		 "name": "icrun", 
-		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -ifrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"exe\\\\${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_path}\\exe\\\\${file_base_name}.exe\" < input.txt & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause\""
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.exe -ifrun & g++ -std=c++17 -Wshadow -Wall \"${file}\" -o \"${file_base_name}.exe\" -O2 -Wno-unused-result && title ${file_base_name}.exe & \"${file_base_name}.exe\" < input.txt & echo. & echo. & echo --Sublime Text 3 C++ Build Script By-- & echo -------------Shanto Noor!------------- & echo. & pause & del \"${file_base_name}.exe\"\""
 		},
 		{ 
 		 "name": "ifrun", 
@@ -37,13 +41,16 @@
                 "-Wall",
                 "${file}",
                 "-o",
-                "exe/${file_base_name}.exe",
+                "${file_base_name}.exe",
                 "-O2",
                 "-Wno-unused-result",
                 "&&",
-				"${file_path}\\exe/${file_base_name}.exe",
+				"${file_base_name}.exe",
 				"<",
-				"input.txt"
+				"input.txt",
+				"&&",
+				"del",
+				"${file_base_name}.exe"
 		 	]
 		},
 		{ 
@@ -56,13 +63,16 @@
                 "-Wall",
                 "${file}",
                 "-o",
-                "exe/${file_base_name}.exe",
+                "${file_base_name}.exe",
                 "-O2",
                 "-Wno-unused-result",
                 "&&",
-				"${file_path}\\exe/${file_base_name}.exe",
+				"${file_base_name}.exe",
 				"<",
-				"input.txt > output.txt"
+				"input.txt>output.txt",
+				"&&",
+				"del",
+				"${file_base_name}.exe"
 		 	]
 		}
 	]

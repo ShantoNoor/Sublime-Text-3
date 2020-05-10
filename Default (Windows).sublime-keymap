@@ -11,6 +11,17 @@
 		}
 	},
 	{ 
+		"keys": ["ctrl+alt+w"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "nrun", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		}
+	},
+	{ 
 		"keys": ["ctrl+alt+a"], 
 		"command": "build", 
 		"args": 
