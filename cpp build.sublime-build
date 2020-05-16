@@ -20,60 +20,48 @@
 
 	"variants": [
 		{
-		 "name": "nrun", 
+		 "name": "ice", 
 		 "shell_cmd": "start cmd /c \"ice \"${file}\"\""
 		},
 		{
-		 "name": "run", 
+		 "name": "ice -d", 
 		 "shell_cmd": "start cmd /c \"ice \"${file}\" -d\""
 		},
 		{ 
-		 "name": "icrun", 
-		 "shell_cmd": "start cmd /c \"ice \"${file}\" -id\""
+		 "name": "ice -di", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -di\""
 		},
 		{ 
-		 "name": "ifrun", 
-		 "cmd": 
-		 	[
-		 		"g++", 
-				"-std=c++17",
-                "-Wshadow",
-                "-Wall",
-                "${file}",
-                "-o",
-                "${file_base_name}.exe",
-                "-O2",
-                "-Wno-unused-result",
-                "&&",
-				"${file_base_name}.exe",
-				"<",
-				"input.txt",
-				"&&",
-				"del",
-				"${file_base_name}.exe"
-		 	]
+		 "name": "ice -dio", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -dio\""
+		},
+		{
+		 "name": "ice -b", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -b\""
 		},
 		{ 
-		 "name": "iofrun", 
-		 "cmd": 
-		 	[
-		 		"g++", 
-				"-std=c++17",
-                "-Wshadow",
-                "-Wall",
-                "${file}",
-                "-o",
-                "${file_base_name}.exe",
-                "-O2",
-                "-Wno-unused-result",
-                "&&",
-				"${file_base_name}.exe",
-				"<",
-				"input.txt>output.txt",
-				"&&",
-				"del",
-				"${file_base_name}.exe"
-		 	]
+		 "name": "ice -di1", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -di1\""
+		},
+		{ 
+		 "name": "ice -di2", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -di2\""
+		},
+		{ 
+		 "name": "ice -di3", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -di3\""
+		},
+		{ 
+		 "name": "ice -dio1", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -dio1\""
+		},
+		{ 
+		 "name": "ice -dio2", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -dio2\""
+		},
+		{ 
+		 "name": "ice -dio3", 
+		 "shell_cmd": "start cmd /c \"ice \"${file}\" -dio3\""
 		}
 	]
 }
