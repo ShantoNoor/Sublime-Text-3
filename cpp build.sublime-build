@@ -2,21 +2,10 @@
 //Shanto Noor
 //Location Windows 10: C:\Users\Shanto\AppData\Roaming\Sublime Text 3\Packages\User
 {
-	"cmd": 
-	   [
-	 		"g++", 
-			"-std=c++17",
-            "-Wshadow",
-            "-Wall",
-            "${file}",
-            "-o",
-            "${file_base_name}.exe",
-            "-O2",
-            "-Wno-unused-result"
-	   ],
-	"shell":true,
-	"working_dir":"$file_path",
-	"selector":"source.c, source.cpp, source.cxx",
+	"shell_cmd": "g++ -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result \"${file}\" -o \"${file_path}/${file_base_name}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.c++",
 
 	"variants": [
 		{

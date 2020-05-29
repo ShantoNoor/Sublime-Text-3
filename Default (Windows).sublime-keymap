@@ -16,7 +16,7 @@
 		"args": 
 		{
 			"build_system": "Packages/User/cpp build.sublime-build", 
-			"variant": "nrun", 
+			"variant": "ice", 
 			"choice_build_system": true, 
 			"choice_variant": true
 		}
@@ -27,7 +27,7 @@
 		"args": 
 		{
 			"build_system": "Packages/User/cpp build.sublime-build", 
-			"variant": "run", 
+			"variant": "ice -d", 
 			"choice_build_system": true, 
 			"choice_variant": true
 		}
@@ -38,7 +38,7 @@
 		"args": 
 		{
 			"build_system": "Packages/User/cpp build.sublime-build", 
-			"variant": "icrun", 
+			"variant": "ice -di", 
 			"choice_build_system": true, 
 			"choice_variant": true
 		}
@@ -49,7 +49,7 @@
 		"args": 
 		{
 			"build_system": "Packages/User/cpp build.sublime-build", 
-			"variant": "ifrun", 
+			"variant": "ice -dio", 
 			"choice_build_system": true, 
 			"choice_variant": true
 		}
@@ -60,9 +60,75 @@
 		"args": 
 		{
 			"build_system": "Packages/User/cpp build.sublime-build", 
-			"variant": "iofrun", 
+			"variant": "ice -b", 
 			"choice_build_system": true, 
 			"choice_variant": true
 		}
+	},
+	{ 
+		"keys": ["ctrl+alt+1"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -di1", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
+	},
+	{ 
+		"keys": ["ctrl+alt+2"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -di2", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
+	},
+	{ 
+		"keys": ["ctrl+alt+3"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -di3", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
+	},
+	{ 
+		"keys": ["ctrl+alt+e"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -dio1", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
+	},
+	{ 
+		"keys": ["ctrl+alt+d"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -dio2", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
+	},
+	{ 
+		"keys": ["ctrl+alt+c"], 
+		"command": "build", 
+		"args": 
+		{
+			"build_system": "Packages/User/cpp build.sublime-build", 
+			"variant": "ice -dio3", 
+			"choice_build_system": true, 
+			"choice_variant": true
+		},
 	}
 ]
