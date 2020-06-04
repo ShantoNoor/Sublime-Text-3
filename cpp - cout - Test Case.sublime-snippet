@@ -1,8 +1,0 @@
-<snippet>
-	<description>Test Case</description>
-	<content><![CDATA[
-cout << "Case " << i+1 << ": " << ${1:Value} << endl;
-]]></content>
-	<tabTrigger>cout</tabTrigger>
-	<scope>source.c++</scope>
-</snippet>
