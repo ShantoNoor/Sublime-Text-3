@@ -1,8 +1,0 @@
-<snippet>
-	<description>std::cout</description>
-	<content><![CDATA[
-std::cout << ${1:/*  Code Here  */} << std::endl;
-]]></content>
-	<tabTrigger>cout</tabTrigger>
-	<scope>source.c++</scope>
-</snippet>
