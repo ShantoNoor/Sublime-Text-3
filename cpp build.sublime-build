@@ -24,6 +24,10 @@
 		 "name": "ice -dio", 
 		 "shell_cmd": "start cmd /c \"ice \"${file}\" -dio\""
 		},
+		{ 
+		 "name": "ice -dion", 
+		 "shell_cmd": "ice \"${file}\" -dion"
+		},
 		{
 		 "name": "ice -b", 
 		 "shell_cmd": "start cmd /c \"ice \"${file}\" -b\""
