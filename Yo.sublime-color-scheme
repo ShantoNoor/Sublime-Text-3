@@ -36,7 +36,7 @@
         "caret": "color(var(indiglo) alpha(0.9))",
         "block_caret": "color(var(indiglo) alpha(0.4))",
         "invisibles": "color(var(white3) alpha(0.35))",
-        "line_highlight": "color(var(cichlid) alpha(0.25)",
+        "line_highlight": "color(var(deepskyblue) alpha(0.25)",
         "selection": "color(var(lime) alpha(0.25)",
         "selection_border": "var(indiglo)",
         "misspelling": "var(red2)",
