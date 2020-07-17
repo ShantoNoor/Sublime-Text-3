@@ -2,7 +2,7 @@ import sublime
 import sublime_plugin
 
 DEFAULT_MAX_FILE_SIZE = 1048576
-DEFAULT_COLOR_NAME = 'invalid.deprecated'
+DEFAULT_COLOR_NAME = 'unicode'
 
 def view_is_too_big(view, max_size_setting, default_max_size=None):
     settings = view.settings()
