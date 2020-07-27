@@ -7,11 +7,19 @@
 
 	"variants": [
 		{
-		 "name": " <input.txt", 
+		 "name": " <input.txt",
 		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <input.txt & python \"${file}\" <input.txt & echo. & echo. & pause\"",
 		},
 		{
-		 "name": " <input.txt >output.txt", 
+		 "name": " >output.txt",
+		 "shell_cmd": "python \"${file}\" >output.txt",
+		},
+		{
+		 "name": " <input.txt >sublime-console",
+		 "shell_cmd": "python \"${file}\" <input.txt",
+		},
+		{
+		 "name": " <input.txt >output.txt",
 		 "shell_cmd": "python \"${file}\" <input.txt >output.txt",
 		}
 	]
