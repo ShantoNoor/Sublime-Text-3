@@ -1,5 +1,5 @@
 <snippet>
-	<description>|Template|</description>
+	<description>|Cpp Template|</description>
 	<content><![CDATA[
 #include <iostream>
 

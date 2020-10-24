@@ -1,0 +1,94 @@
+{
+	"shell_cmd": "start cmd /c \"title ${file_base_name}.py & python \"${file}\" & echo. & echo. & pause\"",
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+
+	"env": {"PYTHONIOENCODING": "utf-8"},
+
+	"variants": [
+		{
+		 "name": " <in0.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in0.txt & echo Expected Output: & type out0.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in0.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in1.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in1.txt & echo Expected Output: & type out1.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in1.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in2.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in2.txt & echo Expected Output: & type out2.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in2.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in3.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in3.txt & echo Expected Output: & type out3.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in3.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in4.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in4.txt & echo Expected Output: & type out4.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in4.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in5.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in5.txt & echo Expected Output: & type out5.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in5.txt & echo. & echo. & pause\"",
+		},
+		{
+		 "name": " <in6.txt",
+		 "shell_cmd": "start cmd /c \"title ${file_base_name}.py <in6.txt & echo Expected Output: & type out6.txt & echo. & echo ------ & echo Program Output: & python \"${file}\" <in6.txt & echo. & echo. & pause\"",
+		},
+
+		{
+		 "name": " <in0.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in0.txt >out.txt",
+		},{
+		 "name": " <in1.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in1.txt >out.txt",
+		},
+		{
+		 "name": " <in2.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in2.txt >out.txt",
+		},
+		{
+		 "name": " <in3.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in3.txt >out.txt",
+		},
+		{
+		 "name": " <in4.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in4.txt >out.txt",
+		},
+		{
+		 "name": " <in5.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in5.txt >out.txt",
+		},
+		{
+		 "name": " <in6.txt >out.txt",
+		 "shell_cmd": "python \"${file}\" <in6.txt >out.txt",
+		},
+
+		{
+		 "name": " <in0.txt >sublime-console",
+		 "shell_cmd": "type out0.txt & echo.& echo ------& python \"${file}\" <in0.txt",
+		},{
+		 "name": " <in1.txt >sublime-console",
+		 "shell_cmd": "type out1.txt & echo.& echo ------& python \"${file}\" <in1.txt",
+		},
+		{
+		 "name": " <in2.txt >sublime-console",
+		 "shell_cmd": "type out2.txt & echo.& echo ------& python \"${file}\" <in2.txt",
+		},
+		{
+		 "name": " <in3.txt >sublime-console",
+		 "shell_cmd": "type out3.txt & echo.& echo ------& python \"${file}\" <in3.txt",
+		},
+		{
+		 "name": " <in4.txt >sublime-console",
+		 "shell_cmd": "type out4.txt & echo.& echo ------& python \"${file}\" <in4.txt",
+		},
+		{
+		 "name": " <in5.txt >sublime-console",
+		 "shell_cmd": "type out5.txt & echo.& echo ------& python \"${file}\" <in5.txt",
+		},
+		{
+		 "name": " <in6.txt >sublime-console",
+		 "shell_cmd": "type out6.txt & echo.& echo ------& python \"${file}\" <in6.txt",
+		}
+	]
+}

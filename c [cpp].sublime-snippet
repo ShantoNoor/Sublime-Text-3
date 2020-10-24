@@ -1,9 +1,17 @@
 <snippet>
-	<description>|One Print|</description>
+	<description>|C Template|</description>
 	<content><![CDATA[
-printf("%${1:d}\n", ${2:v_name});
+#include <stdio.h>
+
+int main()
+{
+	${0:/*Code_Here*/
+	printf("Hello World\n");}
+
+	return 0;
+}
 ]]></content>
-	<tabTrigger>printfo</tabTrigger>
+	<tabTrigger>cpp</tabTrigger>
 	<scope>source.c, source.objc, source.c++, source.objc++</scope>
 </snippet>
 

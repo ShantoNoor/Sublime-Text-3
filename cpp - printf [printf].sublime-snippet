@@ -1,7 +1,7 @@
 <snippet>
 	<description>|One Print|</description>
 	<content><![CDATA[
-printf("%${1:d}", ${2:v_name});
+printf("%${1:d}\n", ${2:v_name});
 ]]></content>
 	<tabTrigger>printf</tabTrigger>
 	<scope>source.c, source.objc, source.c++, source.objc++</scope>

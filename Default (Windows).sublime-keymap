@@ -162,4 +162,12 @@
 	        ]
 	    }
 	},
+	{
+	    "keys": ["ctrl+alt+,"],
+	    "command": "select_color_scheme",
+	    "args":
+	    {
+	        "color_scheme": "Packages/User/Yo2.sublime-color-scheme"
+	    }
+	}
 ]
