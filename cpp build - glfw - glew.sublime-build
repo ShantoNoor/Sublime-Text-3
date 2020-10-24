@@ -1,0 +1,3 @@
+{
+	"shell_cmd": "start cmd /c \"mingw32-make all && pause\""
+}

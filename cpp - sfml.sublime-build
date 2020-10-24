@@ -1,0 +1,18 @@
+{
+	"shell_cmd": "start cmd /c \"mkdir bin & mkdir bin\\debug & mkdir bin\\release & mkdir obj & copy \"C:\\dev\\SFML\\bin\\openal32.dll\" \"${file_path}\\..\\bin\\debug\\\" & copy \"C:\\dev\\SFML\\bin\\openal32.dll\" \"${file_path}\\..\\bin\\release\\\" \"",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}\\..",
+	"selector": "source.c++",
+
+	"variants": 
+	[
+		{ 
+		 "name": "debug", 
+		 "shell_cmd": "start cmd /c \"title main.exe -d && cd obj && \"C:\\Program Files (x86)\\CodeBlocks\\MinGW\\bin\\mingw32-g++.exe\" -Wall -fexceptions -DSFML_STATIC -g -I\"C:\\dev\\SFML\\include\" -c \"${file_path}\\*.cpp\" && \"C:\\Program Files (x86)\\CodeBlocks\\MinGW\\bin\\mingw32-g++.exe\" -L\"C:\\dev\\SFML\\lib\" -o \"${file_path}\\..\\bin\\debug\\main.exe\" \"${file_path}\\..\\obj\\*.o\" -lsfml-graphics-s-d -lsfml-window-s-d -lsfml-audio-s-d -lsfml-network-s-d -lsfml-system-s-d -lfreetype -lopengl32 -lgdi32 -lwinmm -lws2_32 -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg && \"${file_path}\\..\\bin\\debug\\main.exe\" & echo. & echo.& pause\"",
+		},
+		{ 
+		 "name": "release", 
+		 "shell_cmd": "start cmd /c \"title main.exe -r && cd obj && \"C:\\Program Files (x86)\\CodeBlocks\\MinGW\\bin\\mingw32-g++.exe\" -Wall -fexceptions -DSFML_STATIC -O2 -I\"C:\\dev\\SFML\\include\" -c \"${file_path}\\*.cpp\" && \"C:\\Program Files (x86)\\CodeBlocks\\MinGW\\bin\\mingw32-g++.exe\" -L\"C:\\dev\\SFML\\lib\" -o \"${file_path}\\..\\bin\\release\\main.exe\" \"${file_path}\\..\\obj\\*.o\" -s -lsfml-graphics-s -lsfml-window-s -lsfml-audio-s -lsfml-network-s -lsfml-system-s -lfreetype -lopengl32 -lgdi32 -lwinmm -lws2_32 -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg -mwindows && \"${file_path}\\..\\bin\\release\\main.exe\"\"",
+		},
+	]
+}

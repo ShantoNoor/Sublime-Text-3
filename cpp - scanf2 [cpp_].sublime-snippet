@@ -1,0 +1,14 @@
+<snippet>
+	<description>|Two Scan|</description>
+	<content><![CDATA[
+scanf("%${1:d} %${2:d}", &${3:v_name}, &${4:v_name});
+]]></content>
+	<tabTrigger>cpp_</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>
+
+<!-- Location : C:\Users\Shanto\AppData\Roaming\Sublime Text 3\Packages\User -->
+<!-- C++ Snippet for Sublime Text 3 -->
+<!-- Created by snippetGenerator -->
+<!-- Source : cpp.snipx -->
+<!-- Author : Shanto Noor! -->

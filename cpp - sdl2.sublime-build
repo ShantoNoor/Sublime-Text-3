@@ -1,0 +1,25 @@
+{
+	"shell_cmd": "start cmd /c \"title ${file_base_name}.exe & g++ ${file_name} -IC:\\dev\\SDL2\\i686-w64-mingw32\\include\\SDL2 -LC:\\dev\\SDL2\\i686-w64-mingw32\\lib -w -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2 -lSDL2.dll -o ${file_base_name} && ${file_base_name}.exe & echo. & echo. & pause\"",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"selector": "source.c++, source.c, source.cpp",
+
+	"variants": 
+	[
+		{ 
+		 "name": "debug", 
+		 "working_dir": "${file_path}\\..",
+		 "shell_cmd": "start cmd /c \"title main.exe -d && cd obj && g++ -Wall -fexceptions -g -IC:\\dev\\SDL2\\i686-w64-mingw32\\include\\SDL2 -c \"${file_path}\\*.cpp\" && g++ -LC:\\dev\\SDL2\\i686-w64-mingw32\\lib -o \"${file_path}\\..\\bin\\debug\\main.exe\" \"${file_path}\\..\\obj\\*.o\"  -w -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2 && \"${file_path}\\..\\bin\\debug\\main.exe\" & echo. & echo. & pause\"",
+		},
+		{ 
+		 "name": "release", 
+		 "working_dir": "${file_path}\\..",
+		 "shell_cmd": "start cmd /c \"title main.exe -r && cd obj && g++ -Wall -fexceptions -O2 -IC:\\dev\\SDL2\\i686-w64-mingw32\\include\\SDL2 -c \"${file_path}\\*.cpp\" && g++ -LC:\\dev\\SDL2\\i686-w64-mingw32\\lib -o \"${file_path}\\..\\bin\\release\\main.exe\" \"${file_path}\\..\\obj\\*.o\" -s -w -Wl,-subsystem,windows -lmingw32 -lSDL2main -lSDL2 -mwindows && \"${file_path}\\..\\bin\\release\\main.exe\" \"",
+		},
+		{ 
+		 "name": "setup - folders", 
+		 "working_dir": "${file_path}\\..",
+		 "shell_cmd": "start cmd /c \"mkdir bin & mkdir bin\\debug & mkdir bin\\release & mkdir obj\"",
+		},
+
+	]
+}
